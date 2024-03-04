@@ -1,7 +1,8 @@
-const repeatString = function(returnedString, repeat) {
-for (let i = 0; i < repeat - 1; i++) {
-    returnedString += `hey`;
-}
+const repeatString = function(storedString, repeat) {
+let returnedString = '';
+    for (let i = 0; i < repeat; i++) {
+        returnedString += storedString;
+    }
 return returnedString;
 };
 
