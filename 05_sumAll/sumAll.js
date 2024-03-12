@@ -6,8 +6,8 @@ min = Math.min(first,second);
 max = Math.max(first,second);
 if (Math.sign(first) == -1 ||
     Math.sign(second) == -2 ||
-    isNaN(first) ||
-    isNaN(second)) {
+    typeof(first) !== "number" ||
+    typeof(second) !== "number") {
     return "ERROR";
 }
 for (let i = min; i < max + 1; i++) {
