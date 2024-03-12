@@ -7,7 +7,7 @@ max = Math.max(first,second);
 if (Math.sign(first) == -1 ||
     Math.sign(second) == -2 ||
     isNaN(first) ||
-    isNan(second)) {
+    isNaN(second)) {
     return "ERROR";
 }
 for (let i = min; i < max + 1; i++) {
