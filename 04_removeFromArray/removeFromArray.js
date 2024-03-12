@@ -1,11 +1,12 @@
-const removeFromArray = function(fullArray, removeElement) {
-    for (let i = 0; i < fullArray.length; i++) {
-        if (removeElement == fullArray[i]){
-            fullArray.splice(i, 1).pop();
-            return fullArray;
+const removeFromArray = function(inputArray, ...removedElement) {
+    const returnedArray = [];
+    inputArray.forEach((item) => {
+        if (!removedElement.includes(item)) {
+            returnedArray.push(item);
         }
-    }
-};
+    });
+    return returnedArray;
+}
 
 // Do not edit below this line
 module.exports = removeFromArray;
